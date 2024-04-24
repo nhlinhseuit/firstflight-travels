@@ -1,8 +1,8 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border;
-    font-family:'Poppins',sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -10,8 +10,8 @@
 
 /* Home page */
 
-.banner{
-    width:100%;
+.banner {
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -19,7 +19,8 @@
     align-items: center;
 }
 
-.banner video{
+
+.bannerbg {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,69 +30,75 @@
     pointer-events: none;
 }
 
-.content{
+
+.content {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
-
-
-
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3), rgba(4, 1, 17, 0.3));
 }
 
-nav{
+nav {
     width: 100%;
+    height: 60px;
     position: fixed;
-    background-color: rgb(21, 74, 74);
+    background-color: #329999;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .logo{
-    width: 60px;
+
+nav .logo {
+    width: 50px;
     margin: 2vh;
     margin-left: 8%;
+    cursor: pointer;
 }
 
-nav ul li{
+.nav img {
+    cursor: pointer;
+}
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     margin-right: 4vh;
 }
 
-.navbar a{
+.navbar a {
     color: white;
     font-size: 18px;
     padding: 10px 22px;
     border-radius: 4px;
-    font-weight: 500;   
+    font-weight: 500;
     text-decoration: none;
     transition: ease 0.40s;
 }
 
-.navbar a:hover,.navbar a.active{
+.navbar a:hover,
+.navbar a.active {
     background: white;
-    color: black;
+    color: #329999;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
     border-radius: 5px;
-    
+
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 17px;
 }
 
-.title{
+.title {
     text-decoration: none;
     /* display: inline-block; */
     font-size: 4vh;
@@ -102,24 +109,24 @@ nav ul li a{
     vertical-align: center;
 }
 
-.title h1{
+.title h1 {
     font-size: 10vh;
     text-shadow: 2px black;
     transition: ease 0.3s;
 }
 
-.title h1:hover{
-    color:transparent;
+.title h1:hover {
+    color: transparent;
     -webkit-text-stroke: 1px white;
-    
+
 }
 
-.button{
+.button {
     display: inline-block;
-    margin-top:5vh;
+    margin-top: 5vh;
     font-size: 25px;
     padding: 10px 30px;
-    color: rgb(21, 74, 74);
+    color: #329999;
     /* background-color:rgb(164, 44, 44); */
     background-color: white;
     border-radius: 20px;
@@ -127,10 +134,10 @@ nav ul li a{
     transition: ease 0.30s;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.1);
     color: white;
-    background-color: rgb(21, 74, 74);
+    background-color: #329999;
     /* border: 2px solid rgb(42, 37, 68); */
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
     padding: 10px 30px;
@@ -138,94 +145,118 @@ nav ul li a{
 
 /* Services */
 
-.text h2{
+.text h2 {
     font-size: 40px;
     font-weight: 650;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     line-height: 2;
     text-align: center;
+    color: #329999;
 }
 
-.rowitems{
+.rowitems {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     gap: 25px;
     align-items: center;
     text-align: center;
     margin-top: 20px;
-    margin-left: 30px ;
+    margin-left: 30px;
     margin-right: 30px;
-    margin-bottom:10px ;
+    margin-bottom: 10px;
 }
 
-.container-box{
-    border: 1px solid #d3d3d3;
-    border-radius: 5px;
+.container {
+    padding-top: 70px;
+    padding-bottom: 200px;
+
+}
+
+.container-box {
+    border-radius: 27px;
     padding: 50px 10px;
     transition: all 0.7s ease 0s;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container-image img{
+.container-image img {
     height: 100px;
     width: 100px;
     padding: 10px;
     margin-bottom: 15px;
 }
 
-.container-box h4{
+.container-box h4 {
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: 550;
 }
 
-.container-box p{
+.container-box p {
     font-size: 16px;
     color: #808080;
 }
 
-.container-box:hover{
+.container-box:hover {
     transform: translateX(3px);
     box-shadow: 5px 20px 50px rgba(78, 78, 78, 0.1);
-    border: 1px solid transparent;
-    border-radius: 0px;
+    border-radius: 27px;
 }
+
+
 
 /* Packages */
 
-.package-title{
+.package {
+    padding-top: 70px;
+}
+
+.package-title {
     text-align: center;
 }
 
-.package-title h2{
+.package-title h2 {
     font-size: 40px;
     font-weight: 650;
-    padding-top: 75px;
-    padding-bottom: 10px;
     line-height: 2;
+    padding-bottom: 60px;
+    color: #329999;
 }
 
-.package-content{
+.package-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 30px   
 }
 
-.image{
+.outer {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.image {
     position: relative;
-    transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
+    bottom: 40px;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     cursor: pointer;
     filter: brightness(95%);
 }
 
-.image img{
+.image img {
     width: 100%;
     height: 500px;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.image h3{
+.image h3 {
     color: white;
     position: absolute;
     font-size: 30px;
@@ -235,7 +266,8 @@ nav ul li a{
     right: 20px;
 }
 
-.dest-content{
+.dest-content {
+    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -244,14 +276,15 @@ nav ul li a{
     margin-bottom: 50px;
 }
 
-.location h4{
+.location h4 {
+    cursor: pointer;
+    color: #329999;
     font-size: 25px;
     letter-spacing: 1px;
     font-weight: 600;
-    margin-bottom: 2px;
 }
 
-.pac-details li{
+.pac-details li {
     font-size: 19px;
     color: #4c4c4c;
     margin-left: 15px;
@@ -259,35 +292,42 @@ nav ul li a{
     list-style-type: disc;
 }
 
-.image:hover{
+.image:hover {
     filter: brightness(120%);
     transform: scale(1.03);
 }
 
 /* Locations */
 
-.location-content{
+.locations {
+    padding-top: 70px;
+}
+
+.location-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 200px;
 }
 
-.col-content{
+.col-content {
     position: relative;
-    filter:brightness(95%);
-    transition: all 0.3s cubic-bezier(0.445,0.05,0.55,0.95);
+    filter: brightness(95%);
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 }
 
-.col-content img{
+.col-content img {
     margin-bottom: 40px;
     height: 500px;
     border-radius: 27px;
-    width: 100%;
-    
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.col-content h5{
+.col-content h5 {
     position: absolute;
     font-size: 25px;
     color: white;
@@ -297,16 +337,16 @@ nav ul li a{
     cursor: pointer;
 }
 
-.col-content p{
+.col-content p {
     position: absolute;
     font-size: 20px;
     color: white;
     left: 20px;
-    bottom: 80px;
+    bottom: 60px;
     cursor: pointer;
 }
 
-.col-content:hover{
+.col-content:hover {
     filter: brightness(120%);
     transform: scale(1.03);
     cursor: pointer;
@@ -314,48 +354,50 @@ nav ul li a{
 
 /* Newsletter */
 
-.newsletter{
+.newsletter {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-.newstext h2{
+.newstext h2 {
     margin-top: 100px;
     font-size: 38px;
+    color: #329999;
 }
 
-.newstext p{
+.newstext p {
     font-size: 20px;
     color: #4c4c4c;
 }
 
-.newsletter form{
+.newsletter form {
     margin-top: 100px;
     width: 100%;
     position: relative;
 }
 
-.newsletter form input:first-child{
+.newsletter form input:first-child {
     display: inline-block;
     width: 300px;
     font-size: 17px;
     outline: none;
     border: none;
     border-radius: 20px;
-    padding: 20px 150px 20px 30px;
+    padding: 24px 150px 20px 30px;
     box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 }
 
-.newsletter form input:last-child{
+.newsletter form input:last-child {
     display: inline-block;
     position: absolute;
     outline: none;
     border: 2px solid transparent;
     border-radius: 20px;
     color: white;
-    background-color: rgb(21, 74, 74);
+    background-color: #329999;
     padding: 14px 30px;
     cursor: pointer;
     font-size: 17px;
@@ -365,32 +407,31 @@ nav ul li a{
     transition: ease 0.30s;
 }
 
-.newsletter form input:last-child:hover{
-    border: 2px solid rgb(21, 74, 74);
+.newsletter form input:last-child:hover {
+    border: 2px solid #329999;
     background-color: white;
-    color: rgb(21, 74, 74);
+    color: #329999;
 }
 
 
 /* Footer */
 
-.footer{
-    margin-top: 80px;
-    background-color: rgb(21, 74, 74);
+.footer {
+    background-color: #329999;
 }
 
-.foot{
+.foot {
     padding: 20px 0;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
-.footlinks h4{
+.footlinks h4 {
     margin-top: 30px;
     font-size: 20px;
     font-weight: 600;
@@ -400,7 +441,7 @@ nav ul li a{
 }
 
 
-.footlinks h4::before{
+.footlinks h4::before {
     content: "";
     position: absolute;
     height: 2px;
@@ -410,28 +451,28 @@ nav ul li a{
     background: white;
 }
 
-.footlinks ul li{
+.footlinks ul li {
     margin-bottom: 15px;
 }
 
-.footlinks ul li a{
+.footlinks ul li a {
     font-size: 17px;
     color: #dddddd;
     display: block;
     transition: ease 0.30s;
 }
 
-.footlinks ul li a:hover{
+.footlinks ul li a:hover {
     transform: translate(6px);
     color: white;
 }
 
-.social a{
+.social a {
     font-size: 25px;
     margin: 4px;
     height: 40px;
     width: 40px;
-    color: rgb(21, 74, 74);
+    color: #329999;
     background-color: white;
     display: inline-flex;
     justify-content: center;
@@ -440,17 +481,17 @@ nav ul li a{
     transition: ease 0.30s;
 }
 
-.social a:hover{
+.social a:hover {
     transform: scale(1.2);
 }
 
-.end{
+.end {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 12px;
 }
 
-.end p{
+.end p {
     font-size: 15px;
     color: white;
     letter-spacing: 1px;
@@ -459,37 +500,40 @@ nav ul li a{
 
 /* About Us */
 
-.aboutbody{
-    background-color: #191919;
+.aboutbody {
+    height: 100vh;
 }
 
-.about{
+.about {
     width: 100%;
-    padding: 78px 0px;
+    height: 100vh;
+    padding-top: 120px;
+    background-color: #191919;
+
 }
 
-.about img{
+.about img {
     height: auto;
-    width: 400px;
+    width: 450px;
 }
 
-.abt-text{
+.abt-text {
     width: 500px;
 }
 
-.abt-text h1{
+.abt-text h1 {
     font-size: 70px;
     color: white;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
-.abt-text h1 span{
+.abt-text h1 span {
     color: #fc0050;
     letter-spacing: 1px;
 }
 
-.abt-text p{
+.abt-text p {
     color: white;
     font-size: 24px;
     margin-bottom: 45px;
@@ -497,7 +541,7 @@ nav ul li a{
     letter-spacing: 1px;
 }
 
-.main{
+.main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -506,7 +550,7 @@ nav ul li a{
     justify-content: space-around;
 }
 
-.connectbtn{
+.connectbtn {
     display: inline-block;
     background-color: #fc0050;
     font-size: 18px;
@@ -519,18 +563,18 @@ nav ul li a{
     letter-spacing: 1px;
 }
 
-.connectbtn:hover{
+.connectbtn:hover {
     background-color: transparent;
     border: 2px solid #fc0050;
     transform: scale(1.1);
 }
 
-.connect-section{
+.connect-section {
     margin-top: 26px;
 }
 
 
-.social-icons a{
+.social-icons a {
     height: 40px;
     width: 40px;
     margin: 4px;
@@ -544,36 +588,37 @@ nav ul li a{
     transition: ease 0.30s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     transform: scale(1.2);
 }
 
 /* Contact Us */
 
-.contactbody{
+.contactbody {
     background-color: #101010;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.contact{
+.contact {
+    background-color: #101010;
     padding: 110px 30%;
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
 }
 
-.contact-form h1{
-    font-size: 80px;
+.contact-form h1 {
+    font-size: 60px;
     color: white;
     margin-bottom: 20px;
 }
 
-.contact-form h1 span{
-    color:#fc0050;
+.contact-form h1 span {
+    color: #fc0050;
 }
 
-.contact-form p{
+.contact-form p {
     color: white;
     line-height: 30px;
     letter-spacing: 1px;
@@ -582,7 +627,8 @@ nav ul li a{
 }
 
 
-.contact-form form input,form textarea{
+.contact-form form input,
+form textarea {
     width: 100%;
     padding: 17px;
     border: none;
@@ -594,20 +640,21 @@ nav ul li a{
     border-radius: 10px;
 }
 
-.contact-form form .submit-btn{
+.contact-form form .submit-btn {
     display: inline-block;
     background-color: #fc0050;
     font-size: 27px;
     font-weight: 600px;
     border: 2px solid transparent;
     border-radius: 40px;
-    width: 220px;
+    width: 250px;
     cursor: pointer;
     transition: ease 0.30s;
+    margin-top: 20px;
 
 }
 
-.contact-form form .submit-btn:hover{
+.contact-form form .submit-btn:hover {
     border: 2px solid #fc0050;
     background-color: transparent;
     transform: scale(1.1);
@@ -616,34 +663,35 @@ nav ul li a{
 
 /* Registration Form */
 
-.register-body{
+.register-body {
     background-color: #101010;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.registration{
+.registration {
     padding: 110px 30%;
     height: 100%;
     min-height: 100vh;
 }
 
-.register-form h1{
-    font-size: 80px;
+.register-form h1 {
+    font-size: 60px;
     color: white;
     margin-bottom: 20px;
 }
-.register-form h1 span{
+
+.register-form h1 span {
     color: #fc0050;
 }
 
-.register-form{
+.register-form {
     color: white;
     font-size: 20px;
 }
 
-.register-form form input{
+.register-form form input {
     color: white;
     padding: 17px;
     background-color: #191919;
@@ -652,9 +700,10 @@ nav ul li a{
     border: none;
     border-radius: 10px;
     margin-bottom: 20px;
-    
+
 }
-.register-form h4{
+
+.register-form h4 {
     font-size: 22px;
     font-weight: 500;
     margin-top: 20px;
@@ -662,7 +711,7 @@ nav ul li a{
 }
 
 
-.register-form form .submitbtn{
+.register-form form .submitbtn {
     display: inline-block;
     background-color: #fc0050;
     font-size: 27px;
@@ -674,54 +723,54 @@ nav ul li a{
     transition: ease 0.30s;
 }
 
-.register-form form .submitbtn:hover{
+.register-form form .submitbtn:hover {
     border: 2px solid #fc0050;
     background-color: transparent;
     transform: scale(1.1);
 }
 
 
-.location-body{
+.location-body {
     background-color: #191919;
     color: white;
 }
 
-.location-section{
+.location-section {
     padding: 110px;
     height: 100%;
     min-height: 100vh;
 }
 
-.location-heading h1{
+.location-heading h1 {
     margin-top: 20px;
     font-size: 60px;
     margin-bottom: 20px;
 }
 
-.location-heading h1 span{
+.location-heading h1 span {
     color: #fc0050;
 }
 
-.location-detail h1{
+.location-detail h1 {
     padding-top: 60px;
     color: #fc0050;
     font-size: 40px;
 }
 
-.location-detail p{
+.location-detail p {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
-.location-img img{
+.location-img img {
     height: 400px;
     width: 400px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.stars i{
+.stars i {
     font-size: 20px;
     color: rgb(197, 167, 44);
 }
